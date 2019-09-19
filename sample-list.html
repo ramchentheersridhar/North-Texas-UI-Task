@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>North Texas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel=”stylesheet” href=”https://unpkg.com/material-components-web/dist/material-components-web.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+  
+
+ <style type="text/css">
+   .modal{
+    margin:75px 350px ;
+   }
+ </style> 
+    
+
+</head>
+<body style="background-color:gainsboro">
+  
+
+<nav class="navbar navbar-expand-sm bg-white navbar-white" id="main_nav">
+   
+  <a class="navbar-brand" href="#"><img src="logo.png" style="width: 100px;height: 60px;"/></a>
+
+  
+  <ul class="navbar-nav">
+    <li class="nav-item" id="dash">
+      <a class="nav-link" href="dashboard.html">Dashboard</a>
+    </li>
+    <li class="nav-item" id="sample">
+      <a class="nav-link" href="sample-list.html">Sample</a>
+    </li>
+    <li class="nav-item" id="navpro">
+            <a class="nav-link" href="notification.html"><i class="material-icons">notifications_none</i>
+            </a>
+    </li>
+    <li class="nav-item" >
+            <a class="nav-link" href="profile.html"><i class="material-icons"></i></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="profile.html" id="navbardrop" data-toggle="dropdown">
+        Username
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="app.html">Home</a>
+        <a class="dropdown-item" href="sample-list.html">Sample-list</a>
+        <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+        <a class="dropdown-item" href="notification.html">Notifications</a>
+       
+      </div>
+    </li>
+  </ul>
+</nav>
+<br>
+  
+<div class="container" id="cont">
+
+
+  <div class="panel panel-default" id="panel_start" >
+     
+      <div class="row" >
+        <div class="col-xs-* col-md-10 left" >
+          Sample List
+        </div>
+        <div class="col-xs-* col-md-2 right">
+          <div class="row">
+            <div class="col-md-3"><i class="material-icons">note_add</i></div>
+            <div class="col-md-0"><h6 class="aligned">New Submission</h6></div>
+          <!-- <a style="color: white" href="edit-details.html"><i class="material-icons">note_add</i>New Submission</a> -->
+        </div>
+      </div>
+      </div>
+      <div class="panel-body" id="search">
+        <div class="active-cyan-4 mb-0">
+                <input class="form-control" id="search_input"type="text" placeholder="  Search" aria-label="Search">
+        </div>
+        </div>
+        <div class="panel-body">
+           
+                <!-- Search form -->
+                
+                <table id="example" class="table col-xs-6 col-md-* " style="width:100%;background-color: white; overflow-x: auto;">
+                        <thead style="background: rgba(48, 141, 235, 0.2);">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Business Name</th>
+                                <th>Email</th>
+                                <th>Review</th>
+                                <th>Review</th>
+                                <th>View</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>281</td>
+                                <td>Deanna Tori</td>
+                                <td>9876543210</td>
+                                <td>Lab</td>
+                                <td>deannatori@gmail.com</td>
+                                <td>yes</td>
+                                
+
+                        <!-- Modal open -->
+
+
+                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
+
+                        <div class="modal fade modal-lg" tabindex="-1" role="dialog" id="myModal" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-header">
+                                  <h4>Pathologist Review</h4>
+                            </div>
+                            <div class="modal-content">
+                              <div class="container">
+                                
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <h6>Neoplastic Cell Content</h6>
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+                                        <label class="custom-control-label" for="defaultChecked">Circled area</label>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      
+                                    </div>
+                                  </div>
+
+                                  <div class="row">
+                                    <h6>Neoplastic Cell Content</h6>
+                                  </div>
+
+
+                                  <p></p>
+
+                                  <form>
+                                      <div class="form-group">
+                                        <div class="form-row">
+                                          <div class="col-md-6">
+                                            <input type="email" class="form-control" id="search_input11" aria-describedby="emailHelp" placeholder="Enter email">
+                                          </div>
+                                          <div class="col-md-6">
+                                            <input type="email" class="form-control" id="search_input11" aria-describedby="emailHelp" placeholder="Enter email">
+                                          </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                          <div class="col-md-6">
+                                            <input type="email" class="form-control" id="search_input11" aria-describedby="emailHelp" placeholder="Enter email">
+                                          </div>
+                                          <div class="col-md-6">
+                                            <input type="email" class="form-control" id="search_input11" aria-describedby="emailHelp" placeholder="Enter email">
+                                          </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                          <div class="col-md-6">
+                                            <input type="email" class="form-control" id="search_input11" aria-describedby="emailHelp" placeholder="Enter email">
+                                          </div>
+                                          <div class="col-md-6">
+                                            <input type="email" class="form-control" id="search_input11" aria-describedby="emailHelp" placeholder="Enter email">
+                                          </div>
+                                        </div>
+
+                                      </div>
+
+
+
+
+
+
+                                    <!-- <div class="form-group">
+                                      <label>Email address</label>
+                                      <input type="email" class="form-control" id="search_input11" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Password</label>
+                                      <input type="password" class="form-control" id="search_input11" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                     
+                                      <button type="submit" id="search_input11 "class="btn btn-primary">Submit</button>
+                                    </div>
+                                     -->
+                                    
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                              
+                          </div>
+                        </div>
+
+                        <!-- modal close -->
+
+
+
+
+
+
+                                  
+
+
+                                <td><i class="material-icons"><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">event_note</button></i></td>
+                                <td><i class="material-icons"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">remove_red_eye</button></i></td>
+                                <td><i class="material-icons" id="edit"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal-lg" data-target="#myModal">edit</button></i><i class="material-icons"><button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">delete</button></i></td>
+                            </tr>
+                            <tr>
+                                    <td>282</td>
+                                    <td>Deanna Tori</td>
+                                    <td>9876543210</td>
+                                    <td>Lab</td>
+                                    <td>deannatori@gmail.com</td>
+                                    <td>yes</td>
+                                    <td><i class="material-icons"><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">event_note</button></i></td>
+                                    <td><i class="material-icons"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">remove_red_eye</button></i></td>
+                                    <td><i class="material-icons"id="edit"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">edit</button></i><i class="material-icons"><button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">delete</button></i></td>
+                                </tr>
+                                <tr>
+                                        <td>283</td>
+                                        <td>Deanna Tori</td>
+                                        <td>9876543210</td>
+                                        <td>Lab</td>
+                                        <td>deannatori@gmail.com</td>
+                                        <td>yes</td>
+                                        <td><i class="material-icons"><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">event_note</button></i></td>
+                                        <td><i class="material-icons"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">remove_red_eye</button></i></td>
+                                        <td><i class="material-icons"id="edit"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">edit</button></i><i class="material-icons"><button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">delete</button></i></td>
+                                    </tr>
+                                    <tr><td colspan="6"></td>
+                                    <td colspan="1">Raws per page  
+                                            <select>10</select> </td> <td> 1-3 of 3</td>
+                                    <td>      
+                                        <input type="button" value="<" name="prev" style="background-color: transparent;border-color:transparent;margin-left:15px"/>
+                                        <input type="button" value=">" name="next" style="background-color: transparent;border-color:transparent"/>
+                                    </td>
+                                </tr>
+
+
+                            
+                    </table>
+                    
+                             
+
+        </div>
+        
+      </div>
+     
+</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src=”https://unpkg.com/material-components-web/dist/material-components-web.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>$(document).ready(function() {
+        $('#example').DataTable();
+    } );
+</script>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+</html>

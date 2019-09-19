@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>North Texas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel=”stylesheet” href=”https://unpkg.com/material-components-web/dist/material-components-web.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+  
+  <script src=”https://unpkg.com/material-components-web/dist/material-components-web.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    .card{
+      margin: 10px 0px;
+      box-shadow:5px 5px 10px grey;  
+    }
+     
+    .in{
+      align-items:  center;
+      margin: 2px 10px;
+    }
+    .no{
+      text-align: right;
+    }
+    .col h3{
+      vertical-align: middle;
+      align-items:  center;
+    }
+    .icon{
+      align-items: baseline;
+    }
+    .bar_chart1{
+      color: orange;
+    }
+    .bar_chart2{
+      color: cyan;
+    }
+    .bar_chart3{
+      color: blue;   
+    }
+    .cardbase{
+      /*padding:5px 0px;*/
+      /*margin: 0px 5px;*/
+      /*margin: 10px 0px;*/
+      height:370px;
+    }
+    .card3{
+      background-color: transparent;
+    }
+    .aligned{
+      /*text-align: left;*/
+      /*margin:0px;*/
+      /*padding: 0px;*/
+    }
+    .activities{
+      background-color: #fff,
+      margin-left:10px;
+    }
+    .max{
+      margin-top: 10px;
+    }
+    .max1{
+      margin-top: 20px;
+    }
+    .note{
+      /*color: #fff;*/
+      border-image-width: :10px ;
+      height:10px;
+    }
+  </style>
+</head>
+<body style="background-color:gainsboro">
+
+<nav class="navbar navbar-expand-sm bg-white navbar-white" id="main_nav">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="logo.png" style="width: 90px;height: 50px;"/></a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item" id="dash">
+      <a class="nav-link" href="dashboard.html">Dashboard</a>
+    </li>
+    <li class="nav-item" id="sample">
+      <a class="nav-link" href="sample-list.html">Sample</a>
+    </li>
+    <li class="nav-item" id="navpro">
+            <a class="nav-link" href="notification.html"><i class="material-icons">notifications_none</i>
+            </a>
+    </li>
+    <!-- <div id="navpro"> -->
+    <li class="nav-item" ">
+            <a class="nav-link" href="profile.html"><i class="material-icons"></i></a>
+    </li>
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="profile.html" id="navbardrop" data-toggle="dropdown">
+        Username
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="app.html">Home</a>
+        <a class="dropdown-item" href="sample-list.html">Sample-list</a>
+        <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+        <a class="dropdown-item" href="notification.html">Notifications</a>
+       
+      </div>
+    </li>
+  <!-- </div> -->
+  </ul>
+</nav>
+<br>
+  
+<div class="container-fluid" style="padding: 0px 30px; background-color: transparent;">
+   <div class="card" >
+      <div class="card-body">
+        <h3>Dashboard</h3>
+      </div>
+    </div>  
+  <div class="card" style="background-color: gainsboro; ">
+    <div class="card-body" >
+      <div class="row">  
+        <div class="col"><br><h3>The North Texas<br>Genome Centre</h3></div>     
+        <div class="col">
+          <div class="card" >
+            <div class="card-body in">
+              <div class="row in">
+                <center><h6>Today Submission</h6></center>
+              </div>
+              <div class="row in">
+                <div class="col"><i class="material-icons bar_chart1">bar_chart</i><i class="material-icons bar_chart1">bar_chart</i></div>
+                <div class="col no"><h1>3</h1></div>
+              </div>
+              
+            </div>
+          </div>  
+        </div>
+
+        <div class="col">
+          <div class="card" >
+            <div class="card-body in">
+              <div class="row in">
+                <center><h6>This Week Submission</h6></center>
+              </div>
+              <div class="row in">
+                <div class="col"><i class="material-icons bar_chart2">bar_chart</i><i class="material-icons bar_chart2">bar_chart</i></div>
+                <div class="col no"><h1>6</h1></div>
+              </div>
+              
+            </div>
+          </div>  
+        </div>
+
+        <div class="col">
+          <div class="card" >
+            <div class="card-body in">
+              <div class="row in">
+                <center><h6>Total Submission</h6></center>
+              </div>
+              <div class="row in">
+                <div class="col"><i class="material-icons bar_chart3">bar_chart</i><i class="material-icons bar_chart3">bar_chart</i></div>
+                <div class="col no"><h1>26</h1></div>
+              </div>
+              
+            </div>
+          </div>  
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row  card3">
+    <div class="col-md-7 col-lg-7">
+      <div class="card cardbase">
+        <div class="card-header ">
+          <div class="row">
+            <div class="col-md-0"><i class="material-icons material-icons-outlined note">note</i></div>
+            <div class="col-md-11"><h6 class="">Pending Reviews</h6></div>
+          </div>
+           
+        <!-- <div class="card-body"> -->
+          </div>
+          
+          <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Business Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">281</th>
+              <td>Deanna Tori</td>
+              <td>9876543210</td>
+              <td>Lab</td>
+            </tr>
+            <tr>
+              <th scope="row">282</th>
+              <td>Ben</td>
+              <td>9876543210</td>
+              <td>Lab</td>
+            </tr>
+            <tr>
+              <th scope="row">283</th>
+              <td>Roy</td>
+              <td>9876543210</td>
+              <td>Lab</td>
+            </tr>
+          </tbody>
+        </table>
+          
+          
+        
+      </div>
+     
+      </div>
+       <div class="col-md-5 col-lg-5">
+        <div class="card activities">
+          <div class="card-header">
+            <div class="row">
+            <div class="col-md-2"><i class="material-icons bar_chart">schedule</i></div>
+            <div class="col-md-10"><h6 class="aligned">Activities</h6></div>
+          </div>
+           </div>
+            <!-- <i class="material-icons">schedule</i>Activities</div> -->
+          <div class="card-body">
+           
+
+            <div class="row">
+                
+                  <div class="col-md-0"><img src="https://img.icons8.com/metro/10/26ff00/new-moon.png"></div>
+                  <div class="col-md-11">
+                    <div class="row">
+                      <div class="col-md-4"><h6>Werner</h6></div>
+                      <div class="col-md-8">
+                        <p>Today at 11.25 AM</p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row-md-1">
+                      <p>Added New Submission</p>
+                    </div>                   
+                  
+              </div>
+
+              <div class="row">
+                
+                  <div class="col-md-0"><img src="https://img.icons8.com/metro/10/26ff00/new-moon.png"></div>
+                  <div class="col-md-11">
+                    <div class="row">
+                      <div class="col-md-4"><h6>Werner</h6></div>
+                      <div class="col-md-8">
+                        <p>Today at 11.25 AM</p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row-md-1">
+                      <p>Added New Submission</p>
+                    </div>                   
+                  
+              </div>
+
+
+              <div class="row">
+                
+                  <div class="col-md-0"><img src="https://img.icons8.com/metro/10/26ff00/new-moon.png"></div>
+                  <div class="col-md-11">
+                    <div class="row">
+                      <div class="col-md-4"><h6>Werner</h6></div>
+                      <div class="col-md-8">
+                        <p>Today at 11.25 AM</p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row-md-1">
+                      <p>Added New Submission</p>
+                    </div>                   
+                  
+              </div>
+
+              <div class="row">
+                
+                  <div class="col-md-0"><img src="https://img.icons8.com/metro/10/26ff00/new-moon.png"></div>
+                  <div class="col-md-11">
+                    <div class="row">
+                      <div class="col-md-4"><h6>Werner</h6></div>
+                      <div class="col-md-8">
+                        <p>Today at 11.25 AM</p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row-md-1">
+                      <p>Added New Submission</p>
+                    </div>                   
+                  
+              </div>
+
+           
+          </div>
+       
+      </div>
+    </div>
+      </div>
+    
+
+
+
+
+
+
+    
+     
+</div>
+
+</body>
+</html>

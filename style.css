@@ -1,0 +1,333 @@
+#dash #sample{
+    margin-left: 0px;
+}
+#img-panel {
+
+    width:900px;
+    height:900px;
+    background-size: cover;
+}
+/* .image-holder{
+    padding:88px;
+    margin:0px;
+    background-color:rgba(38,174,174,0.45);
+    height:500px;
+    width:472px;
+} */
+.register-photo .image-holder{
+    display:table-cell;
+    max-width: 100%;
+    /* width:900px; */
+    max-height:100%;
+    background:url(./src/img/microscope.jpg);
+    background-size:cover;
+  }
+  .register-photo .form-container {
+     display:table;
+     max-width:900px;
+     width:100%;
+     margin:0 auto;
+     box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+   }
+.form-container{
+
+}
+.row {
+  margin: 0px 25px;
+  padding: 0px 1%;
+  /*max-width: 100%;*/
+}
+.row .left{
+  background-color: rgba(48,142,220,0.74);
+  padding: 15px 15px;
+  color:#ffffff;
+
+}
+.row .right{
+  background: rgba(60,10,235,0.74);
+  padding: 15px 15px;
+  color:#ffffff;
+
+
+}
+.row .a{
+  color: white;
+  position: baseline;
+}
+
+.jumbotron{
+
+  padding:117px;
+  background-color:rgba(48,142,235,0.74);
+  margin:0px;
+
+}
+#h1-jumb{
+  width:267px;
+  color:rgb(210,220,230);
+  font-size:21px;
+}
+#p-jumb{
+  color:white;
+}
+.form-class{
+    font-family:Robot;
+    width:355px;
+}
+#paneltitle{
+    background-color: rgb(40, 187, 255);
+    color:white;
+    padding: 10px 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px
+}
+#search{
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    max-width: 100%
+}
+#search_input{
+    width: 25%;
+    margin-left: 25px;
+    padding:0px;
+    
+}
+#search_input11{
+    width: 100%;
+    margin-left: 10px;
+    padding:10px;
+
+    
+}
+#placeholder{
+    width: 150px
+}
+#Newsub{
+   margin-right: 20px;
+   /* margin-left: 0%;  */
+
+}
+#btn-new-sub{
+    opacity: 1;
+    height: 50px;
+    background-color:transparent;
+    border-width: 0px;
+    margin-left:83%;
+    text-align: start
+    
+}
+#navpro{
+    margin-left:500px;
+   
+ 
+}
+#navpro_bell{
+    margin-left:600px;
+    margin-right: 25px;
+}
+#main_nav{
+    color: black;
+    background-color:white;
+}
+#dash{
+    margin-left: 410px;
+}
+#sample{
+    margin-left: 90px;
+}
+#edit-icon{
+    margin-left:85%;
+    margin-top: 0px;
+    width:50px;
+    height: 50px;
+    background: transparent
+}
+#cont{
+    margin-left: 5%;
+    max-width: 90%;
+    margin-top: 10px;
+    max-height:75%
+    background-color:white;
+}
+#sub_det_cont{
+    margin-left: 5%;
+    max-width: 90%;
+    margin-bottom: 10px;
+    max-height:60%;
+    
+}
+table{
+    margin:0px 0px 10px 0px;
+    border: 1;
+    
+}
+#edit{
+    margin-right: 25px;
+}
+#head{
+    margin-left: 39%;
+    margin-top: 0px;
+    color: rgba(48,142,235,0.74);
+
+}
+#continue_btn{
+    
+    width:210px;
+    color: white;
+    margin: 10px 80% 10px 83%;
+    
+}
+#row1{
+    height: 70px;
+    margin-right: 0px;
+    margin-left: 0px;
+    
+}
+.panel-body .row{
+  margin-top: 20px;
+}
+.paneltop{
+  width:80%;
+}
+button .loginbtn{
+  width: 180px;
+}
+.panel-body div :first-child{
+    padding:10px 0px 1px;
+    color: rgb(40, 187, 255);;
+}
+.panel-body div  :last-child{
+    padding:10px 0px 1px;
+    color: rgb(7, 7, 7);;
+}
+.panel-heading :last-child{
+    /* background-color: blue; */
+    width:50px;
+    justify-content: center;margin-right: 20px
+}
+/* .panel-body #search_input11{
+    margin:15px 20px 0px 0px;
+} */
+body {
+    margin: 50px;
+  }
+  
+  ::-webkit-input-placeholder {
+    direction: ltl;
+  }
+  
+  fieldset.form-group {
+    position: relative;
+  }
+  
+  label {
+    position: absolute;
+    top: .6rem;
+    left: 1rem;
+    transition: all .2s ease-in-out;
+     cursor: text; 
+  }
+  
+  :focus + label {
+    color: #66afe9;
+    top: -.9rem;
+    background:white;
+  }
+  
+
+  
+  .form-group fieldset:first-child{
+      padding: 10px 10px;
+      margin-left: 50px
+  }
+  ------------------------------------
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* padding-top: 100px; Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;/* Full height*/
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+ 
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    /* margin:50px 50px 50px 50px; */
+    padding: 0;
+    border: 1px solid #888;
+    /* width: 500%; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    /*padding: 10px 0px;*/
+    background-color: #66afe9;
+    /*color: #fff;*/
+  }
+
+  .modal-header h4{
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .modal-body {
+      margin: 10px 20px;
+  }
+  .modal-body .row .custom-radio{
+    margin-left: 25px
+  }
+
+  .modal-footer {
+    /* padding: 2px 16px; */
+    background-color:transparent;
+    color: white;
+  }
+  .modal-alert{
+
+  }
+  .panel-body #search1{
+      margin:10px 30px
+  }
+  .panel-body #other{
+      width:75%
+  }
+  .panel-body h6{
+      margin-left:30px;
+      color:#66afe9;
+  }
+  
